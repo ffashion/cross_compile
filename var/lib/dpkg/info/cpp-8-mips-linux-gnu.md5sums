@@ -1,0 +1,4 @@
+356cfcf53452c0206c18a4c1cbf6f415  usr/bin/mips-linux-gnu-cpp-8
+ea21a1bf77a0b9c274394a83a460001f  usr/lib/gcc-cross/mips-linux-gnu/8/cc1
+2c4ffd679a7a1a9b370169bea37c0de0  usr/share/lintian/overrides/cpp-8-mips-linux-gnu
+9b7c4beebd8a13cb33e7b6ee9d002ae9  usr/share/man/man1/mips-linux-gnu-cpp-8.1.gz

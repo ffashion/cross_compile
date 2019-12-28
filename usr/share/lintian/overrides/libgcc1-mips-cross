@@ -1,0 +1,6 @@
+libgcc1-mips-cross: package-name-doesnt-match-sonames
+libgcc1-mips-cross binary: arch-independent-package-contains-binary-or-object
+libgcc1-mips-cross binary: non-standard-dir-in-usr
+libgcc1-mips-cross binary: shlibs-declares-dependency-on-other-package
+libgcc1-mips-cross binary: postinst-has-useless-call-to-ldconfig
+libgcc1-mips-cross binary: postrm-has-useless-call-to-ldconfig

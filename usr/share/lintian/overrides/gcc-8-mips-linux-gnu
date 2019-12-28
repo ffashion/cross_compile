@@ -1,0 +1,2 @@
+gcc-8-mips-linux-gnu binary: hardening-no-pie
+gcc-8-mips-linux-gnu binary: binary-from-other-architecture

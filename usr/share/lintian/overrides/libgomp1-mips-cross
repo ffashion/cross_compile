@@ -1,0 +1,5 @@
+libgomp1-mips-cross binary: arch-independent-package-contains-binary-or-object
+libgomp1-mips-cross binary: non-standard-dir-in-usr
+libgomp1-mips-cross binary: shlibs-declares-dependency-on-other-package
+libgomp1-mips-cross binary: postinst-has-useless-call-to-ldconfig
+libgomp1-mips-cross binary: postrm-has-useless-call-to-ldconfig

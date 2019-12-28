@@ -1,0 +1,8 @@
+libc6-mipsel-cross binary: non-standard-dir-in-usr
+libc6-mipsel-cross binary: arch-independent-package-contains-binary-or-object
+libc6-mipsel-cross binary: embedded-library
+libc6-mipsel-cross binary: missing-depends-line
+libc6-mipsel-cross binary: shlibs-declares-dependency-on-other-package
+libc6-mipsel-cross binary: shared-lib-without-dependency-information
+libc6-mipsel-cross binary: shlib-with-executable-bit
+libc6-mipsel-cross binary: unstripped-binary-or-object

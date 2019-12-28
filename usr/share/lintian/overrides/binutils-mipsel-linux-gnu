@@ -1,0 +1,15 @@
+binutils-mipsel-linux-gnu binary: package-name-doesnt-match-sonames
+binutils-mipsel-linux-gnu binary: non-standard-dir-in-usr
+
+# needed for kfreebsd and the hurd
+binutils-mipsel-linux-gnu binary: file-in-unusual-dir
+
+# internal libs, with the target name encoded
+binutils-mipsel-linux-gnu binary: no-shlibs-control-file
+
+# yes, intended
+binutils-mipsel-linux-gnu binary: shlib-in-multi-arch-foreign-package
+binutils-mipsel-linux-gnu binary: triplet-dir-and-architecture-mismatch
+
+# some triplets are long ...
+binutils-mipsel-linux-gnu binary: extended-description-line-too-long

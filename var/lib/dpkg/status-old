@@ -1,0 +1,1148 @@
+Package: binutils-common
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 420
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: binutils
+Version: 2.32-7ubuntu4
+Replaces: binutils (<< 2.29.1-3.1~)
+Breaks: binutils (<< 2.29.1-3.1~)
+Description: Common files for the GNU assembler, linker and binary utilities
+ This package contains the localization files used by binutils packages for
+ various target architectures and parts of the binutils documentation. It is
+ not useful on its own.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-mips-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 15154
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: allowed
+Source: binutils
+Version: 2.32-7ubuntu4
+Replaces: binutils (<< 2.29-6)
+Depends: binutils-common (= 2.32-7ubuntu4), libc6 (>= 2.27), zlib1g (>= 1:1.1.4)
+Suggests: binutils-doc (= 2.32-7ubuntu4)
+Breaks: binutils (<< 2.29-6)
+Description: GNU binary utilities, for mips-linux-gnu target
+ This package provides GNU assembler, linker and binary utilities
+ for the mips-linux-gnu target.
+ .
+ You don't need this package unless you plan to cross-compile programs
+ for mips-linux-gnu and mips-linux-gnu is not your native platform.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-mipsel-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 15154
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: allowed
+Source: binutils
+Version: 2.32-7ubuntu4
+Replaces: binutils (<< 2.29-6)
+Depends: binutils-common (= 2.32-7ubuntu4), libc6 (>= 2.27), zlib1g (>= 1:1.1.4)
+Suggests: binutils-doc (= 2.32-7ubuntu4)
+Breaks: binutils (<< 2.29-6)
+Description: GNU binary utilities, for mipsel-linux-gnu target
+ This package provides GNU assembler, linker and binary utilities
+ for the mipsel-linux-gnu target.
+ .
+ You don't need this package unless you plan to cross-compile programs
+ for mipsel-linux-gnu and mipsel-linux-gnu is not your native platform.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: coreutils
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 7000
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 8.30-1ubuntu1
+Pre-Depends: libacl1 (>= 2.2.51-8), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.25), libselinux1 (>= 2.1.13)
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes:
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand
+ uniq unlink users vdir wc who whoami yes
+Homepage: http://gnu.org/software/coreutils
+Original-Maintainer: Michael Stone <mstone@debian.org>
+
+Package: cpp-8-mips-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 18730
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: gccgo-8 (<< 8.3.0-6ubuntu1)
+Depends: gcc-8-mips-linux-gnu-base (= 8.3.0-6ubuntu1cross1), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl19 (>= 0.15), libmpc3, libmpfr6 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: gcc-8-locales (>= 8)
+Breaks: libmagics++-dev (<< 2.28.0-4)
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+ .
+ This package contains preprocessor configured for mips architecture.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: cpp-8-mipsel-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 18730
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: gccgo-8 (<< 8.3.0-6ubuntu1)
+Depends: gcc-8-mipsel-linux-gnu-base (= 8.3.0-6ubuntu1cross1), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl19 (>= 0.15), libmpc3, libmpfr6 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: gcc-8-locales (>= 8)
+Breaks: libmagics++-dev (<< 2.28.0-4)
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+ .
+ This package contains preprocessor configured for mipsel architecture.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: cpp-mips-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: interpreters
+Installed-Size: 30
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-defaults-ports (1.181ubuntu3)
+Version: 4:8.3.0-1ubuntu3
+Depends: cpp-8-mips-linux-gnu (>= 8.3.0-1~)
+Suggests: cpp-doc
+Description: GNU C preprocessor (cpp) for the mips architecture
+ The GNU C preprocessor is a macro processor that is used automatically
+ by the GNU C compiler to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the cross-compiler for mips architecture.
+ .
+ This is a dependency package providing the default GNU C preprocessor
+ for the mips architecture.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: dpkg
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 6701
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.19.6ubuntu1
+Depends: tar (>= 1.28-1)
+Pre-Depends: libbz2-1.0, libc6 (>= 2.15), liblzma5 (>= 5.2.2), libselinux1 (>= 2.3), libzstd1 (>= 1.3.2), zlib1g (>= 1:1.1.4)
+Suggests: apt, debsig-verify
+Breaks: acidbase (<= 1.4.5-4), amule (<< 2.3.1+git1a369e47-3), beep (<< 1.3-4), im (<< 1:151-4), libapt-pkg5.0 (<< 1.7~b), libdpkg-perl (<< 1.18.11), lsb-base (<< 10.2019031300), netselect (<< 0.3.ds1-27), pconsole (<< 1.0-12), phpgacl (<< 3.3.7-7.3), pure-ftpd (<< 1.0.43-1), systemtap (<< 2.8-1), terminatorx (<< 4.0.1-1), xvt (<= 2.1-20.1)
+Conffiles:
+ /etc/alternatives/README 7be88b21f7e386c8d5a8790c2461c92b
+ /etc/cron.daily/dpkg f20e10c12fb47903b8ec9d282491f4be
+ /etc/dpkg/dpkg.cfg f4413ffb515f8f753624ae3bb365b81b
+ /etc/logrotate.d/alternatives 5fe0af6ce1505fefdc158d9e5dbf6286
+ /etc/logrotate.d/dpkg 9e25c8505966b5829785f34a548ae11f
+Description: Debian package management system
+ This package provides the low-level infrastructure for handling the
+ installation and removal of Debian software packages.
+ .
+ For Debian package development tools, install dpkg-dev.
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+
+Package: file
+Status: install ok installed
+Priority: standard
+Section: utils
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1:5.35-4
+Depends: libc6 (>= 2.4), libmagic1 (= 1:5.35-4)
+Description: Recognize the type of data in a file using "magic" numbers
+ The file command is "a file type guesser", a command-line tool that
+ tells you in words what kind of data a file contains.
+ .
+ This package contains the file program itself.
+Original-Maintainer: Christoph Biedl <debian.axhn@manchmal.in-ulm.de>
+Homepage: https://www.darwinsys.com/file/
+
+Package: gcc-7-cross-base-ports
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 101
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-7-cross-ports (24ubuntu3)
+Version: 7.4.0-8ubuntu1cross2
+Description: GCC, the GNU Compiler Collection (library base package)
+ This empty package contains changelog and copyright files common to
+ all libraries contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-7 (= 7.4.0-8ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-8-cross-base-ports
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 102
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Description: GCC, the GNU Compiler Collection (library base package)
+ This empty package contains changelog and copyright files common to
+ all libraries contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-8-mips-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 22168
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: cpp-8-mips-linux-gnu (<< 7.1.1-8), gccgo-8 (<< 8.3.0-6ubuntu1)
+Provides: c-compiler-mips-linux-gnu
+Depends: cpp-8-mips-linux-gnu (= 8.3.0-6ubuntu1cross1), gcc-8-mips-linux-gnu-base (= 8.3.0-6ubuntu1cross1), libcc1-0 (>= 8), binutils-mips-linux-gnu (>= 2.32), libgcc-8-dev-mips-cross (>= 8.3.0-6ubuntu1cross1), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libgmp10 (>= 2:5.0.1~), libisl19 (>= 0.15), libmpc3, libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev-mips-cross (>= 2.13-0ubuntu6)
+Suggests: gcc-8-multilib-mips-linux-gnu, gcc-8-doc (>= 8), gcc-8-locales (>= 8), libgcc1-dbg-mips-cross (>= 1:8.3.0-6ubuntu1cross1), libgomp1-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libitm1-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libatomic1-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libasan5-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), liblsan0-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libtsan0-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libubsan1-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libmpx2-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1), libquadmath0-dbg-mips-cross (>= 8.3.0-6ubuntu1cross1)
+Conflicts: gcc-multilib
+Description: GNU C compiler (cross compiler for mips architecture)
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This package contains C cross-compiler for mips architecture.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-8-mips-linux-gnu-base
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 113
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Breaks: gnat (<< 7), gnat-6 (<< 6.4)
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-8-mipsel-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 22168
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: cpp-8-mipsel-linux-gnu (<< 7.1.1-8), gccgo-8 (<< 8.3.0-6ubuntu1)
+Provides: c-compiler-mipsel-linux-gnu
+Depends: cpp-8-mipsel-linux-gnu (= 8.3.0-6ubuntu1cross1), gcc-8-mipsel-linux-gnu-base (= 8.3.0-6ubuntu1cross1), libcc1-0 (>= 8), binutils-mipsel-linux-gnu (>= 2.32), libgcc-8-dev-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libgmp10 (>= 2:5.0.1~), libisl19 (>= 0.15), libmpc3, libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev-mipsel-cross (>= 2.13-0ubuntu6)
+Suggests: gcc-8-multilib-mipsel-linux-gnu, gcc-8-doc (>= 8), gcc-8-locales (>= 8), libgcc1-dbg-mipsel-cross (>= 1:8.3.0-6ubuntu1cross1), libgomp1-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libitm1-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libatomic1-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libasan5-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), liblsan0-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libtsan0-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libubsan1-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libmpx2-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libquadmath0-dbg-mipsel-cross (>= 8.3.0-6ubuntu1cross1)
+Conflicts: gcc-multilib
+Description: GNU C compiler (cross compiler for mipsel architecture)
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This package contains C cross-compiler for mipsel architecture.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-8-mipsel-linux-gnu-base
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 113
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Breaks: gnat (<< 7), gnat-6 (<< 6.4)
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-9-base
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 245
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-9
+Version: 9-20190402-1ubuntu1
+Breaks: gnat (<< 7)
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-9-cross-base-ports
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 235
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 9-20190402-1ubuntu1cross2
+Description: GCC, the GNU Compiler Collection (library base package)
+ This empty package contains changelog and copyright files common to
+ all libraries contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: gcc-mips-linux-gnu
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 25
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: gcc-defaults-ports (1.181ubuntu3)
+Version: 4:8.3.0-1ubuntu3
+Depends: cpp-mips-linux-gnu (= 4:8.3.0-1ubuntu3), gcc-8-mips-linux-gnu (>= 8.3.0-1~)
+Recommends: libc6-dev-mips-cross | libc-dev-mips-cross
+Suggests: make, manpages-dev, autoconf, automake, libtool, flex, bison, gdb-mips-linux-gnu, gcc-doc
+Description: GNU C compiler for the mips architecture
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This is a dependency package providing the default GNU C cross-compiler
+ for the mips architecture.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libacl1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 70
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: acl
+Version: 2.2.53-4
+Depends: libc6 (>= 2.14)
+Description: access control list - shared library
+ This package contains the shared library containing the POSIX 1003.1e
+ draft standard 17 functions for manipulating access control lists.
+Original-Maintainer: Guillem Jover <guillem@debian.org>
+Homepage: https://savannah.nongnu.org/projects/acl/
+
+Package: libatomic1-mips-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 35
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 9-20190402-1ubuntu1cross2
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mips-cross (>= 2.29)
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libatomic1-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 35
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 9-20190402-1ubuntu1cross2
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mipsel-cross (>= 2.29)
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libattr1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 55
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: attr
+Version: 1:2.4.48-4
+Depends: libc6 (>= 2.4)
+Conffiles:
+ /etc/xattr.conf d1e7e7add29e247fdcf2a098fe5b37a0
+Description: extended attribute handling - shared library
+ Contains the runtime environment required by programs that make use
+ of extended attributes.
+Original-Maintainer: Guillem Jover <guillem@debian.org>
+Homepage: https://savannah.nongnu.org/projects/attr/
+
+Package: libbz2-1.0
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 98
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: bzip2
+Version: 1.0.6-9
+Depends: libc6 (>= 2.4)
+Description: high-quality block-sorting file compressor library - runtime
+ This package contains libbzip2 which is used by the bzip2 compressor.
+ .
+ bzip2 is a freely available, patent free, data compressor.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: https://web.archive.org/web/20180801004107/http://www.bzip.org/
+
+Package: libc-dev-bin
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 430
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: glibc
+Version: 2.29-0ubuntu2
+Depends: libc6 (>> 2.29), libc6 (<< 2.30)
+Recommends: manpages, manpages-dev
+Description: GNU C Library: Development binaries
+ This package contains utility programs related to the GNU C Library
+ development package.
+Homepage: https://www.gnu.org/software/libc/libc.html
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: libc6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 12393
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: glibc
+Version: 2.29-0ubuntu2
+Replaces: libc6-amd64
+Depends: libgcc1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, locales
+Breaks: hurd (<< 1:0.5.git20140203-1), libtirpc1 (<< 0.2.3), locales (<< 2.29), locales-all (<< 2.29), nocache (<< 1.1-1~), nscd (<< 2.29), r-cran-later (<< 0.7.5+dfsg-2)
+Conflicts: openrc (<< 0.27-2~)
+Conffiles:
+ /etc/ld.so.conf.d/x86_64-linux-gnu.conf d4e7a7b88a71b5ffd9e2644e71a0cfab
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Homepage: https://www.gnu.org/software/libc/libc.html
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: libc6-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 19378
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: glibc
+Version: 2.29-0ubuntu2
+Provides: libc-dev
+Depends: libc6 (= 2.29-0ubuntu2), libc-dev-bin (= 2.29-0ubuntu2), linux-libc-dev
+Suggests: glibc-doc, manpages-dev
+Breaks: binutils (<< 2.26), binutils-gold (<< 2.20.1-11), cmake (<< 2.8.4+dfsg.1-5), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2), gcc-4.6 (<< 4.6.0-12), libhwloc-dev (<< 1.2-3), libjna-java (<< 3.2.7-4), liblouis-dev (<< 2.3.0-2), liblouisxml-dev (<< 2.4.0-2), libperl5.26 (<< 5.26.1-3), make (<< 3.81-8.1), pkg-config (<< 0.26-1)
+Conflicts: libc0.1-dev, libc0.3-dev, libc6.1-dev
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Homepage: https://www.gnu.org/software/libc/libc.html
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: libc6-dev-mips-cross
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: cross-toolchain-base-ports (27ubuntu2)
+Version: 2.29-0ubuntu1cross5
+Provides: libc-dev-mips-cross, libc6-dev-mips-dcv1
+Depends: libc6-mips-cross (= 2.29-0ubuntu1cross5), linux-libc-dev-mips-cross
+Conflicts: libc0.1-dev-mips-cross, libc0.3-dev-mips-cross, libc6.1-dev-mips-cross
+Description: GNU C Library: Development Libraries and Header Files (for cross-compiling)
+ This package was generated by dpkg-cross for cross compiling.
+ .
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Built-Using: binutils (= 2.32-4ubuntu1), linux (= 5.0.0-7.8), gcc-8 (= 8.3.0-2ubuntu1), glibc (= 2.29-0ubuntu1)
+
+Package: libc6-mips-cross
+Status: install ok installed
+Priority: optional
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: cross-toolchain-base-ports (27ubuntu2)
+Version: 2.29-0ubuntu1cross5
+Replaces: libc6-mips32-mips-cross
+Provides: libc6-mips-dcv1
+Conflicts: openrc-mips-cross (<< 0.27-2~)
+Description: GNU C Library: Shared libraries (for cross-compiling)
+ This package was generated by dpkg-cross for cross compiling.
+ .
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Built-Using: binutils (= 2.32-4ubuntu1), linux (= 5.0.0-7.8), gcc-8 (= 8.3.0-2ubuntu1), glibc (= 2.29-0ubuntu1)
+
+Package: libc6-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: cross-toolchain-base-ports (27ubuntu2)
+Version: 2.29-0ubuntu1cross5
+Replaces: libc6-mips32-mipsel-cross
+Provides: libc6-mipsel-dcv1
+Conflicts: libc6-loongson2f-mipsel-cross, openrc-mipsel-cross (<< 0.27-2~)
+Description: GNU C Library: Shared libraries (for cross-compiling)
+ This package was generated by dpkg-cross for cross compiling.
+ .
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Built-Using: binutils (= 2.32-4ubuntu1), linux (= 5.0.0-7.8), gcc-8 (= 8.3.0-2ubuntu1), glibc (= 2.29-0ubuntu1)
+
+Package: libcc1-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 156
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-9
+Version: 9-20190402-1ubuntu1
+Depends: gcc-9-base (= 9-20190402-1ubuntu1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Description: GCC cc1 plugin for GDB
+ libcc1 is a plugin for GDB.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc-7-dev-mipsel-cross
+Status: install ok unpacked
+Priority: optional
+Section: libdevel
+Installed-Size: 2618
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-7-cross-ports (24ubuntu3)
+Version: 7.4.0-8ubuntu1cross2
+Replaces: gccgo-7 (<< 7.4.0-8ubuntu1)
+Depends: gcc-7-cross-base-ports (= 7.4.0-8ubuntu1cross2), libgcc1-mipsel-cross (>= 1:7.4.0-8ubuntu1cross2), libgomp1-mipsel-cross (>= 7.4.0-8ubuntu1cross2), libatomic1-mipsel-cross (>= 7.4.0-8ubuntu1cross2)
+Recommends: libc6-dev-mipsel-cross (>= 2.13-0ubuntu6)
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+Built-Using: gcc-7 (= 7.4.0-8ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc-8-dev-mips-cross
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 2624
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: gccgo-8 (<< 8.3.0-6ubuntu1)
+Depends: gcc-8-cross-base-ports (= 8.3.0-6ubuntu1cross1), libgcc1-mips-cross (>= 1:8.3.0-6ubuntu1cross1), libgomp1-mips-cross (>= 8.3.0-6ubuntu1cross1), libatomic1-mips-cross (>= 8.3.0-6ubuntu1cross1)
+Recommends: libc6-dev-mips-cross (>= 2.13-0ubuntu6)
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc-8-dev-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 2624
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-8-cross-ports (20ubuntu7)
+Version: 8.3.0-6ubuntu1cross1
+Replaces: gccgo-8 (<< 8.3.0-6ubuntu1)
+Depends: gcc-8-cross-base-ports (= 8.3.0-6ubuntu1cross1), libgcc1-mipsel-cross (>= 1:8.3.0-6ubuntu1cross1), libgomp1-mipsel-cross (>= 8.3.0-6ubuntu1cross1), libatomic1-mipsel-cross (>= 8.3.0-6ubuntu1cross1)
+Recommends: libc6-dev-mipsel-cross (>= 2.13-0ubuntu6)
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+Built-Using: gcc-8 (= 8.3.0-6ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 116
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-9 (9-20190402-1ubuntu1)
+Version: 1:9-20190402-1ubuntu1
+Depends: gcc-9-base (= 9-20190402-1ubuntu1), libc6 (>= 2.14)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc1-mips-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 248
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 1:9-20190402-1ubuntu1cross2
+Provides: libgcc1-mips-dcv1
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mips-cross (>= 2.29)
+Description: GCC support library (mips)
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+ .
+ This package contains files for mips architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgcc1-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 249
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 1:9-20190402-1ubuntu1cross2
+Provides: libgcc1-mipsel-dcv1
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mipsel-cross (>= 2.29)
+Description: GCC support library (mipsel)
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+ .
+ This package contains files for mipsel architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgmp10
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 555
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gmp
+Version: 2:6.1.2+dfsg-4
+Depends: libc6 (>= 2.14)
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+Original-Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Homepage: http://gmplib.org/
+
+Package: libgomp1-mips-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 253
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 9-20190402-1ubuntu1cross2
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mips-cross (>= 2.29)
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libgomp1-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 253
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-9-cross-ports (3ubuntu4)
+Version: 9-20190402-1ubuntu1cross2
+Depends: gcc-9-cross-base-ports (= 9-20190402-1ubuntu1cross2), libc6-mipsel-cross (>= 2.29)
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+Built-Using: gcc-9 (= 9-20190402-1ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libisl19
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1813
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: isl
+Version: 0.20-2
+Replaces: libisl-dbg (<< 0.19)
+Depends: libc6 (>= 2.14), libgmp10
+Breaks: libisl-dbg (<< 0.19)
+Description: manipulating sets and relations of integer points bounded by linear constraints
+ isl is a library for manipulating sets and relations of integer points
+ bounded by linear constraints. Supported operations on sets include
+ intersection, union, set difference, emptiness check, convex hull,
+ (integer) affine hull, integer projection, and computing the lexicographic
+ minimum using parametric integer programming. It also includes an ILP solver
+ based on generalized basis reduction.
+ .
+ This package contains the runtime library.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Homepage: http://isl.gforge.inria.fr/
+
+Package: liblzma5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 259
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: xz-utils
+Version: 5.2.4-1
+Depends: libc6 (>= 2.17)
+Breaks: liblzma2 (<< 5.1.1alpha+20110809-3~)
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+Original-Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Homepage: https://tukaani.org/xz/
+
+Package: libmagic-mgc
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 5283
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: file
+Version: 1:5.35-4
+Replaces: libmagic1 (<< 1:5.28-4~)
+Breaks: libmagic1 (<< 1:5.28-4~)
+Description: File type determination library using "magic" numbers (compiled magic file)
+ This package provides the compiled magic file "magic.mgc". It has
+ been separated from libmagic1 in order to meet the multiarch
+ requirements without breaking applications that expect this file
+ at its absolute path.
+Original-Maintainer: Christoph Biedl <debian.axhn@manchmal.in-ulm.de>
+Homepage: https://www.darwinsys.com/file/
+
+Package: libmagic1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 216
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: file
+Version: 1:5.35-4
+Depends: libc6 (>= 2.15), zlib1g (>= 1:1.1.4), libmagic-mgc (= 1:5.35-4)
+Suggests: file
+Conffiles:
+ /etc/magic 272913026300e7ae9b5e2d51f138e674
+ /etc/magic.mime 272913026300e7ae9b5e2d51f138e674
+Description: Recognize the type of data in a file using "magic" numbers - library
+ This library can be used to classify files according to magic number
+ tests. It implements the core functionality of the file command.
+Original-Maintainer: Christoph Biedl <debian.axhn@manchmal.in-ulm.de>
+Homepage: https://www.darwinsys.com/file/
+
+Package: libmpc3
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 110
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mpclib3
+Version: 1.1.0-1
+Depends: libc6 (>= 2.4), libgmp10, libmpfr6 (>= 4.0.0)
+Description: multiple precision complex floating-point library
+ MPC is a portable library written in C for arbitrary precision
+ arithmetic on complex numbers providing correct rounding. For the time
+ being, it contains all arithmetic operations over complex numbers, the
+ exponential and the logarithm functions, the trigonometric and
+ hyperbolic functions.
+ .
+ Ultimately, it should implement a multiprecision equivalent of the ISO
+ C99 standard.
+ .
+ It builds upon the GNU MP and the MPFR libraries.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Homepage: http://www.multiprecision.org/mpc/
+
+Package: libmpfr6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1096
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mpfr4
+Version: 4.0.2-1
+Depends: libc6 (>= 2.14), libgmp10
+Breaks: libgmp3 (<< 4.1.4-3), libmpc3 (<< 1.1.0-1~)
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Homepage: http://www.mpfr.org/
+
+Package: libn32gcc-7-dev-mipsel-cross
+Status: install ok unpacked
+Priority: optional
+Section: libdevel
+Installed-Size: 2847
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gcc-7-cross-ports (24ubuntu3)
+Version: 7.4.0-8ubuntu1cross2
+Replaces: gccgo-7-multilib (<< 7.4.0-8ubuntu1)
+Depends: gcc-7-cross-base-ports (= 7.4.0-8ubuntu1cross2), libn32gcc1-mipsel-cross (>= 1:7.4.0-8ubuntu1cross2), libn32gomp1-mipsel-cross (>= 7.4.0-8ubuntu1cross2), libn32atomic1-mipsel-cross (>= 7.4.0-8ubuntu1cross2)
+Recommends: libc6-dev-mipsel-cross (>= 2.13-0ubuntu6)
+Description: GCC support library (n32 development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+Built-Using: gcc-7 (= 7.4.0-8ubuntu1)
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libpcre3
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 673
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: pcre3
+Version: 2:8.39-12
+Depends: libc6 (>= 2.14)
+Breaks: approx (<< 4.4-1~), cduce (<< 0.5.3-2~), cmigrep (<< 1.5-7~), galax (<< 1.1-7~), libpcre-ocaml (<< 6.0.1~), liquidsoap (<< 0.9.2-3~), ocsigen (<< 1.3.3-1~)
+Conflicts: libpcre3-dev (<= 4.3-3)
+Description: Old Perl 5 Compatible Regular Expression Library - runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ New packages should use the newer pcre2 packages, and existing
+ packages should migrate to pcre2.
+ .
+ This package contains the runtime libraries.
+Original-Maintainer: Matthew Vernon <matthew@debian.org>
+
+Package: libselinux1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 197
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libselinux
+Version: 2.8-1build2
+Depends: libc6 (>= 2.14), libpcre3
+Description: SELinux runtime shared libraries
+ This package provides the shared libraries for Security-enhanced
+ Linux that provides interfaces (e.g. library functions for the
+ SELinux kernel APIs like getcon(), other support functions like
+ getseuserbyname()) to SELinux-aware applications. Security-enhanced
+ Linux is a patch of the Linux kernel and a number of utilities with
+ enhanced security functionality designed to add mandatory access
+ controls to Linux.  The Security-enhanced Linux kernel contains new
+ architectural components originally developed to improve the security
+ of the Flask operating system. These architectural components provide
+ general support for the enforcement of many kinds of mandatory access
+ control policies, including those based on the concepts of Type
+ Enforcement, Role-based Access Control, and Multi-level Security.
+ .
+ libselinux1 provides an API for SELinux applications to get and set
+ process and file security contexts and to obtain security policy
+ decisions.  Required for any applications that use the SELinux
+ API. libselinux may use the shared libsepol to manipulate the binary
+ policy if necessary (e.g. to downgrade the policy format to an older
+ version supported by the kernel) when loading policy.
+Original-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Homepage: http://userspace.selinuxproject.org/
+
+Package: libstdc++6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2424
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcc-9
+Version: 9-20190402-1ubuntu1
+Replaces: libstdc++6-9-dbg (<< 4.9.0-3)
+Depends: gcc-9-base (= 9-20190402-1ubuntu1), libc6 (>= 2.18), libgcc1 (>= 1:4.2)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Conflicts: scim (<< 1.4.2-1)
+Description: GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+Homepage: http://gcc.gnu.org/
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: libzstd1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 658
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libzstd
+Version: 1.3.8+dfsg-3
+Depends: libc6 (>= 2.14)
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Homepage: https://github.com/facebook/zstd
+
+Package: linux-libc-dev
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 5378
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: linux
+Version: 5.0.0-13.14
+Replaces: linux-kernel-headers
+Provides: aufs-dev, linux-kernel-headers
+Conflicts: linux-kernel-headers
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+
+Package: linux-libc-dev-mips-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 5280
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: cross-toolchain-base-ports (27ubuntu2)
+Version: 5.0.0-7.8cross5
+Provides: linux-kernel-headers-mips-cross, linux-libc-dev-mips-dcv1
+Description: Linux Kernel Headers for development (for cross-compiling)
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+Original-Maintainer: Cross Toolchain Base Team <cross-toolchain-base-devs@lists.launchpad.net>
+Built-Using: linux (= 5.0.0-7.8)
+
+Package: linux-libc-dev-mipsel-cross
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 5280
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: cross-toolchain-base-ports (27ubuntu2)
+Version: 5.0.0-7.8cross5
+Provides: linux-kernel-headers-mipsel-cross, linux-libc-dev-mipsel-dcv1
+Description: Linux Kernel Headers for development (for cross-compiling)
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+Original-Maintainer: Cross Toolchain Base Team <cross-toolchain-base-devs@lists.launchpad.net>
+Built-Using: linux (= 5.0.0-7.8)
+
+Package: tar
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 884
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.30+dfsg-5
+Replaces: cpio (<< 2.4.2-39)
+Pre-Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.17), libselinux1 (>= 1.32)
+Suggests: bzip2, ncompress, xz-utils, tar-scripts, tar-doc
+Breaks: dpkg-dev (<< 1.14.26)
+Conflicts: cpio (<= 2.4.2-38)
+Description: GNU version of the tar archiving utility
+ Tar is a program for packaging a set of files as a single archive in tar
+ format.  The function it performs is conceptually similar to cpio, and to
+ things like PKZIP in the DOS world.  It is heavily used by the Debian package
+ management system, and is useful for performing system backups and exchanging
+ sets of files with others.
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+Homepage: https://www.gnu.org/software/tar/
+
+Package: zlib1g
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: zlib
+Version: 1:1.2.11.dfsg-1ubuntu2
+Provides: libz1
+Depends: libc6 (>= 2.14)
+Breaks: libxml2 (<< 2.7.6.dfsg-2), texlive-binaries (<< 2009-12)
+Conflicts: zlib1 (<= 1:1.0.4-7)
+Description: compression library - runtime
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the shared library.
+Original-Maintainer: Mark Brown <broonie@debian.org>
+Homepage: http://zlib.net/
+

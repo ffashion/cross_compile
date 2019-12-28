@@ -1,0 +1,2 @@
+libgcc-8-dev-mipsel-cross binary: arch-independent-package-contains-binary-or-object
+libgcc-8-dev-mipsel-cross binary: non-standard-dir-in-usr

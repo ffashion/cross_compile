@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/mips-linux-gnu
+/usr/mips-linux-gnu/lib
+/usr/mips-linux-gnu/lib/libgomp.so.1.0.0
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgomp1-mips-cross
+/usr/mips-linux-gnu/lib/libgomp.so.1
+/usr/share/doc/libgomp1-mips-cross

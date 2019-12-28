@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/mipsel-linux-gnu
+/usr/mipsel-linux-gnu/lib
+/usr/mipsel-linux-gnu/lib/libatomic.so.1.2.0
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libatomic1-mipsel-cross
+/usr/mipsel-linux-gnu/lib/libatomic.so.1
+/usr/share/doc/libatomic1-mipsel-cross

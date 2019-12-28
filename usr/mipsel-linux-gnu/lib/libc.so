@@ -1,0 +1,5 @@
+/* GNU ld script
+   Use the shared library, but some functions are only in
+   the static library, so try that secondarily.  */
+OUTPUT_FORMAT(elf32-tradlittlemips)
+GROUP ( /usr/mipsel-linux-gnu/lib/libc.so.6 /usr/mipsel-linux-gnu/lib/libc_nonshared.a  AS_NEEDED ( /usr/mipsel-linux-gnu/lib/ld.so.1 ) )

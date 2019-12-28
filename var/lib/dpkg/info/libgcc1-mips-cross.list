@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/mips-linux-gnu
+/usr/mips-linux-gnu/lib
+/usr/mips-linux-gnu/lib/libgcc_s.so.1
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgcc1-mips-cross
+/usr/share/doc/libgcc1-mips-cross

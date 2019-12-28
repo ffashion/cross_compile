@@ -1,0 +1,5 @@
+libatomic1-mipsel-cross binary: arch-independent-package-contains-binary-or-object
+libatomic1-mipsel-cross binary: non-standard-dir-in-usr
+libatomic1-mipsel-cross binary: shlibs-declares-dependency-on-other-package
+libatomic1-mipsel-cross binary: postinst-has-useless-call-to-ldconfig
+libatomic1-mipsel-cross binary: postrm-has-useless-call-to-ldconfig

@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gcc-8-cross-base-ports
+/usr/share/doc/gcc-8-cross-base-ports/changelog.Debian.gz
+/usr/share/doc/gcc-8-cross-base-ports/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides

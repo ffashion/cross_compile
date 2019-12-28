@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/mipsel-linux-gnu
+/usr/mipsel-linux-gnu/lib
+/usr/mipsel-linux-gnu/lib/libgcc_s.so.1
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgcc1-mipsel-cross
+/usr/share/doc/libgcc1-mipsel-cross
